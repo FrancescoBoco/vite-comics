@@ -10,7 +10,7 @@
    
     <div class="header-components">
         <div class="logo">
-            <img src="" alt="">
+            <img src="../assets/img/dc-logo.png" alt="">
         </div>
         <div class="elements" >
                 <ul>
@@ -92,7 +92,12 @@
     align-items: center;
     height: 100%;
     background-color: white;
-    
+    .logo{
+        height: 80px;
+        img{
+            height: 100%;
+        }
+    }
 }
 
 
@@ -100,11 +105,13 @@
     display: flex;
     width: 60%;
 }
+
 ul{
     display: flex;
     justify-content: space-around;
     width: 100%
 }
+
 .elements ul li,
 .elements ul li a
 {
@@ -113,7 +120,12 @@ ul{
     color: black;
     font-size: 0.9em;
     font-weight: bold;
-    
+
+    *:hover{
+        color: #3382F1;
+        border-bottom: 3px solid #3382F1;
+        padding-bottom: 20px;
+    }
 }
 
 
