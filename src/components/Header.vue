@@ -109,7 +109,9 @@
 ul{
     display: flex;
     justify-content: space-around;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    
 }
 
 .elements ul li,
@@ -121,10 +123,12 @@ ul{
     font-size: 0.9em;
     font-weight: bold;
 
-    *:hover{
+    &:hover,
+    &.active{
         color: #3382F1;
-        border-bottom: 3px solid #3382F1;
-        padding-bottom: 20px;
+        border-bottom: 2px solid #3382F1;
+        transition: 0.3s;
+        
     }
 }
 
